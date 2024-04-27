@@ -881,7 +881,7 @@ namespace Catch {
                 multi->addListener(listener->create(config));
             }
 
-            std::size_t reporterIdx = 0;
+            [[maybe_unused]] std::size_t reporterIdx = 0;
             for ( auto const& reporterSpec : config->getProcessedReporterSpecs() ) {
                 multi->addReporter( createReporter(
                     reporterSpec.name,
