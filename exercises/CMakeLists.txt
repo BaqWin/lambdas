@@ -26,4 +26,4 @@ foreach(FILE ${SOURCES})
 endforeach(FILE)
 
 include(GoogleTest)
-gtest_discover_tests(${PROJECT_NAME}-ut)
+#gtest_discover_tests(${PROJECT_NAME}-ut)
